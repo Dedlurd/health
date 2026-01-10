@@ -244,6 +244,7 @@ header ul{
     display: flex;
     flex-direction: column;
     text-align: left;
+    flex-wrap: wrap;
 }
 .fmdts input{
     border: none;
@@ -259,6 +260,7 @@ header ul{
     display: flex;
     flex-direction: row;
     gap: 2em;
+    flex-wrap: wrap;
 }
 .fnm{
     display: flex;
@@ -348,6 +350,7 @@ header ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 50vh;
 }
 .mapss{
     width: 100%;
@@ -418,15 +421,15 @@ header ul{
     }
 
     .home{
-        background: url(./images/slider1.jpg);
         padding-inline: 2em;
         justify-content: center;
         text-align: center;
-        background-size: none;
+        width: auto;
     }
     .about{
         padding-inline: 2em;
         height: auto;
+        flex-wrap: wrap;
     }
     .container{
         flex-direction: column;
@@ -444,6 +447,11 @@ header ul{
         flex-direction: column;
         padding-inline: 2em;
         height: auto;
+        justify-content: center;
+    }
+    .form{
+        flex-direction: column;
+        flex-wrap: wrap;
     }
     .footer{
         flex-direction: column;
