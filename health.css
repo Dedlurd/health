@@ -418,10 +418,11 @@ header ul{
     }
 
     .home{
+        background: url(./images/slider1.jpg);
         padding-inline: 2em;
         justify-content: center;
         text-align: center;
-        background-size: 10em;
+        background-size: none;
     }
     .about{
         padding-inline: 2em;
