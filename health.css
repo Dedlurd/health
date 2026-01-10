@@ -10,6 +10,14 @@ header {
     padding-inline: 10em;
     text-align: center;
 }
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2em;
+    gap: 2em;
+}
 .details{
     margin: .5em;
     display: flex;
@@ -20,12 +28,23 @@ header {
 .icontxt{
     font-size: .8em;
 }
+ .ictx{
+        display: flex;
+        flex-direction: row;
+        gap: 9em;
+    }
 .header {
     margin: .5em;
     display: flex;
     flex-direction: row;
     gap: 4em;
     list-style: none;
+}
+.fa-solid fa-align-justify{
+    display: none;
+}
+header ul{
+    display: flex;
 }
 
 .aa{
@@ -355,4 +374,79 @@ header {
     list-style: none;
     color: rgb(17, 14, 14);
     font-size: .9em;
+}
+
+@media (max-width: 768px) {
+    body{
+       margin: 0;
+       padding: 0; 
+       box-sizing: border-box;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 2em;
+        justify-content: space-between;
+    }
+    .details{
+        flex-direction: column;
+        padding-inline: 3em;
+        gap: .5em;
+        justify-content: center;
+        margin: 1em;
+    }
+    .ictx{
+        display: flex;
+        flex-direction: row;
+        gap: .5em;
+    }
+    .header {
+        flex-direction: column;
+        gap: 2em;
+    }
+    .head{
+        padding-inline: 2em;
+        justify-content: space-between;
+    }
+    .header li{
+        display: none;
+    }
+    .fa-align-justify {
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .home{
+        padding-inline: 2em;
+        justify-content: center;
+        text-align: center;
+        background-size: 10em;
+    }
+    .about{
+        padding-inline: 2em;
+        height: auto;
+    }
+    .container{
+        flex-direction: column;
+        padding-inline: 2em;
+    }
+    .news{
+        flex-direction: column;
+        padding-inline: 2em;
+    }
+    .contain{
+        flex-direction: column;
+        padding-inline: 2em;
+    }
+    .appoint{
+        flex-direction: column;
+        padding-inline: 2em;
+        height: auto;
+    }
+    .footer{
+        flex-direction: column;
+        padding-inline: 2em;
+        height: auto;
+    }
 }
